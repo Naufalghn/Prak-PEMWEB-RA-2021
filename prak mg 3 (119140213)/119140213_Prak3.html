@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praktikum MG 3 119140213</title>
+</head>
+<body>
+    <div class="tema">
+    <label>Pilih Tema</label>
+    <select onchange="pilihTema(value)">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        </select>
+    </div>
+    <h2 class="tema">Hello :), Selamat datang di website game saya.</h2>
+    <div class="tema">
+        <label>Keyword</label>
+        <select onchange="pilihGame(value)">
+        <option value="r6">Tom Clancy's Rainbow Six Siege</option>
+        <option value="csgo">Counter Strike: Global Offensive</option>
+        <option value="val">Valorant</option>
+        </select>
+    </div>
+    <p class="tema" id="game">Tom Clancy's Rainbow Six Siege adalah permainan video penembak taktis online yang dikembangkan oleh Ubisoft Montreal dan diterbitkan oleh Ubisoft. Ini dirilis di seluruh dunia untuk Microsoft Windows, PlayStation 4, dan Xbox One pada tanggal 1 Desember 2015.</p>
+	<div class="tema">
+        <h4>Faktorial</h4>
+		<label>Input Angka : </label>
+		<input type="number" name="" id="input">
+		<button onclick="faktorial()">Cek Faktorial</button>
+		<p id="faktorial"></p>
+    </div>
+    <script type="text/javascript">
+		function pilihTema(value) {
+			var tema = document.getElementsByClassName("tema")
+			if (value == "light") {
+				for (let i = 0; i < tema.length; i++) {
+					tema[i].style.color='black'
+				}
+				document.body.style.background = 'white'
+			} else{
+				for (let i = 0; i < tema.length; i++) {
+					tema[i].style.color='white'
+				}
+				document.body.style.background = 'black'
+			}
+		}
+        function pilihGame(value) {
+			var merk = document.getElementById("game")
+			if (value == "r6") {
+				game.innerHTML = "Tom Clancy's Rainbow Six Siege adalah permainan video penembak taktis online yang dikembangkan oleh Ubisoft Montreal dan diterbitkan oleh Ubisoft. Ini dirilis di seluruh dunia untuk Microsoft Windows, PlayStation 4, dan Xbox One pada tanggal 1 Desember 2015."
+			}else if (value == "csgo") {
+				game.innerHTML = "CSGO adalah sebuah permainan dengan mode FPS yang dikembangkan oleh Valve Corporation dan Hidden Path Entertainment. Kedua perusahaan ini juga merupakan perusahaan yang mengembangkan Counter Strike: Source. Counter Strike: GO merupakan permainan keempat di dalam waralaba Counter Strike, tidak termasuk Counter Strike Neo dan Online. Counter Strike Global Offensive dirilis pada tanggal 21 Agustus 2012."
+			}else {
+				game.innerHTML = "Valorant adalah penembak pahlawan orang pertama taktis multipemain gratis untuk dimainkan yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows. Pertama kali menggoda dengan nama kode Project A pada Oktober 2019, permaian memulai periode beta tertutup dengan akses terbatas pada 7 April 2020, diikuti dengan perilisan resmi pada 2 Juni 2020."
+			}
+		}
+        function faktorial() {
+		    var input = document.getElementById("input").value
+		    var hasil = input
+		    console.log(input)
+
+		    for (let i = hasil - 1; i > 0; i--) {
+		        hasil *= i
+		    }
+		    var faktorial = document.getElementById("faktorial")
+		    faktorial.innerHTML = `Hasil Faktorial Dari ${input} Adalah ${hasil}`
+		}
+	</script>
+</body>
+</html>
