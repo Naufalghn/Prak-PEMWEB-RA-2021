@@ -1,0 +1,60 @@
+body{
+	background: -webkit-linear-gradient(right, #d12d9a, #b1f70d);
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+div{
+	width: 60%;
+	background: rgba(128, 19, 19, 0.5);
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	margin-left: 20%;
+}
+table tr td{
+	padding: 0 10 10 10;
+}
+table input{
+	background-color: rgba(245, 117, 134, 0.5);
+	height: 25px;
+}
+
+table button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tampilanData{
+    border-collapse: collapse;
+    font-size: 13pt;
+    margin: 20px;
+}
+.tampilanData td{
+    padding:5px;
+    height: 30px;
+    background-color: rgba(252, 128, 128, 0.5);
+}
+.tampilanData th{
+    background-color: rgb(219, 117, 34);
+    height: 30px;
+    padding: 5px;
+}
+.tampilanData button{
+	margin: 0;
+}
+button{
+	background: rgb(115, 255, 216,0.5);
+	color: rgb(255, 255, 255);
+}
+button:hover{
+	background: rgb(62, 254, 255);
+	color: rgb(143, 9, 9);
+}
+.btn-delete:hover{
+	background-color: rgba(243, 18, 104, 0.7);
+}
+.btn-edit:hover{
+	background-color: rgb(255, 0, 212);
+}
