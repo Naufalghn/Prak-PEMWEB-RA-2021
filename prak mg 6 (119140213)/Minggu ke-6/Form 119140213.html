@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<link type="text/css" rel="stylesheet" href="CSS Form 119140213.css">
+<head>
+<title>Tugas Praktikum Minggu 6 119140213</title>
+</head>
+<body>
+<h1>Toko Buah Segar ITERA</h1>
+<hr/>
+<p>List Buah:<br><br>
+Harga Mangga Rp 15000/kg <br><br>
+Harga Jambu Rp 13000/kg <br><br>
+Harga Salak Rp 10000/kg <br><br>
+</p>
+<form action="Form PHP 119140213.php" method="get">
+<fieldset>
+<legend>Silahkan Pesan Buah Yang Anda Inginkan:</legend>
+<table>
+<tr>
+<td>Buah Mangga  </td>
+<td><input type="number" id="mangga" name="mangga" onchange="setValue()" placeholder="Masukkan berat buah"> kg</td>
+</tr>
+<tr>
+<td>Buah Jambu  </td>
+<td><input type="number" id="jambu" name="jambu" onchange="setValue()" placeholder="Masukkan berat buah"> kg</td>
+</tr>
+<tr>
+<td>Buah Salak </td>
+<td><input type="number" id="salak" name="salak" onchange="setValue()" placeholder="Masukkan berat buah"> kg</td>
+</tr>
+<tr>
+<td>Total Harga:</td>
+<td><input type="number" id="hs" name="hs" readonly></td>
+</tr>
+</table>
+<button type="submit">Pesan</button>
+</fieldset>
+</form>
+<script>
+function setValue(){
+var mangga = document.getElementById("mangga").value * 15000;
+var jambu = document.getElementById("jambu").value * 13000;
+var salak = document.getElementById("salak").value * 10000;
+var harga = mangga + jambu + salak;
+            var hs = document.getElementById("hs");
+            hs.value = harga;
+
+ }
+    </script>
+</body>
+<footer>
+</footer>
