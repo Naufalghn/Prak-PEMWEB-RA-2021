@@ -1,0 +1,62 @@
+body{
+background:url(https://media.altchar.com/prod/images/940_530/gm-6a09217c-84a0-4f9c-89dd-6017eba93f1b-sledge.jpeg);
+background-repeat: no-repeat;
+background-size: 1366px;
+background-position: center;
+}
+
+h1{
+	color: white;
+}
+h1 span{
+	background-color: rgb(81, 82, 83);
+}
+div{
+	margin: 10px;
+	text-align: center;
+
+}
+table tr td{
+	padding: 0 10 10 10;
+}
+table input{
+	background-color: rgb(245, 255, 250, 0.5);
+	height: 25px;
+}
+table button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tabeldata{
+    border-collapse: collapse;
+    font-size: 13pt;
+    margin: 20px;
+}
+.tabeldata td{
+    padding:5px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+.tabeldata th{
+    background-color: black;
+    height: 30px;
+    padding: 5px;
+	color:white
+}
+.tabeldata button{
+	margin: 0;
+}
+button{
+	background: rgb(255, 0, 0);
+	color: white;
+}
+button:hover{
+	background: rgb(255, 22, 243);
+	color: rgb(255, 255, 255);
+}
+.btn-delete:hover{
+	background-color: red;
+}
+.btn-edit:hover{
+	background-color: rgb(255, 0, 0);
+}
